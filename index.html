@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | Tastes of Africa</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <a class="logo" href="index.html">Tastes of Africa</a>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="recipes.html">Recipes</a>
+    <a href="regions.html">Regions</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <button id="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="hero-overlay">
+      <h1>Welcome to Tastes of Africa</h1>
+      <p>Discover the <mark>spices</mark>, stories and flavors of a continent.</p>
+      <div class="video-wrap">
+        <iframe src="https://www.youtube.com/embed/1zyDUkdVZ0E" title="Exploring the richness of African cuisine and traditional foods" allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+
+  <section class="container">
+    <h2>Featured Dishes</h2>
+    <div class="card-grid">
+      <figure class="card">
+        <img src="images/jollof.jpg" alt="A pot of West African jollof rice">
+        <figcaption>
+          <h3>Jollof Rice</h3>
+          <p>Smoky tomato rice with <mark>scotch bonnet pepper</mark>.</p>
+          <a href="jollof.html">View recipe</a>
+        </figcaption>
+      </figure>
+      <figure class="card">
+        <img src="images/injera.jpg" alt="Injera served with Ethiopian stews">
+        <figcaption>
+          <h3>Injera</h3>
+          <p>Spongy sourdough flatbread made from <mark>teff</mark>.</p>
+          <a href="injera.html">View recipe</a>
+        </figcaption>
+      </figure>
+      <figure class="card">
+        <img src="images/isombe.jpg" alt="Isombe, a cassava leaves stew from Rwanda">
+        <figcaption>
+          <h3>Isombe</h3>
+          <p>Rwandan cassava leaves stewed with <mark>peanut</mark> flavor.</p>
+          <a href="isombe.html">View recipe</a>
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="container">
+    <h2>Explore by Region</h2>
+    <ul class="region-links">
+      <li><a href="regions.html#west">West Africa</a></li>
+      <li><a href="regions.html#north">North Africa</a></li>
+      <li><a href="regions.html#east">East Africa</a></li>
+    </ul>
+  </section>
+
+  <section class="container">
+    <h2>Latest Food Trends</h2>
+    <article class="trend">
+      <h3>Teff goes global</h3>
+      <p>Chefs worldwide are embracing <mark>teff</mark>, a gluten-free ancient grain.</p>
+    </article>
+    <article class="trend">
+      <h3>Afro-fusion street food</h3>
+      <p>Food trucks are blending <mark>suya spice</mark> with burgers and tacos.</p>
+    </article>
+    <article class="trend">
+      <h3>Plant-based African cooking</h3>
+      <p>Dishes like <mark>isombe</mark> and lentil stews are inspiring vegan menus.</p>
+    </article>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <p>&copy; 2026 Tastes of Africa</p>
+  <form id="newsletter" class="newsletter">
+    <label for="news-email">Newsletter:</label>
+    <input type="email" id="news-email" placeholder="you@email.com" required>
+    <button type="submit">Subscribe</button>
+  </form>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

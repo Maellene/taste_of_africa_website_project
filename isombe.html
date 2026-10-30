@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Isombe | Tastes of Africa</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <a class="logo" href="index.html">Tastes of Africa</a>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="recipes.html">Recipes</a>
+    <a href="regions.html">Regions</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <button id="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+  </nav>
+</header>
+
+<main>
+  <article class="container recipe">
+    <h1>Isombe</h1>
+    <img class="recipe-img" src="images/isombe.jpg" alt="Isombe cassava leaves stew">
+    <p>Isombe is a beloved Rwandan dish made from pounded <mark>cassava leaves</mark>
+       slowly cooked with <mark>peanut flour</mark>, eggplant and onions. It is often
+       served with rice, ugali or plantain.</p>
+
+    <h2>Ingredients</h2>
+    <label for="servings">Servings:</label>
+    <input type="number" id="servings" value="4" min="1" max="20" data-base="4">
+    <ul id="ingredients">
+      <li><span class="amt" data-amount="500">500</span> g cassava leaves</li>
+      <li><span class="amt" data-amount="1">1</span> eggplant</li>
+      <li><span class="amt" data-amount="3">3</span> tbsp peanut flour</li>
+      <li><span class="amt" data-amount="1">1</span> onion</li>
+      <li><span class="amt" data-amount="2">2</span> cloves garlic</li>
+    </ul>
+
+    <h2>Instructions</h2>
+    <details>
+      <summary>Step 1: Prepare the leaves</summary>
+      <p>Wash the cassava leaves and pound or blend them until finely crushed.</p>
+    </details>
+    <details>
+      <summary>Step 2: Simmer</summary>
+      <p>Boil the leaves with chopped onion, garlic and eggplant for about 1 hour until very tender.</p>
+    </details>
+    <details>
+      <summary>Step 3: Add peanut flour</summary>
+      <p>Stir in peanut flour with a little water, cook 15 more minutes, season with salt and serve hot.</p>
+    </details>
+
+    <h2>Nutrition Facts (approximate, per serving)</h2>
+    <table>
+      <thead><tr><th>Nutrient</th><th>Amount</th></tr></thead>
+      <tbody>
+        <tr><td>Calories</td><td>180 kcal</td></tr>
+        <tr><td>Carbohydrates</td><td>15 g</td></tr>
+        <tr><td>Protein</td><td>8 g</td></tr>
+      </tbody>
+    </table>
+
+    <h2>Video Tutorial: How to Cook Cassava Leaves (Isombe)</h2>
+    <div class="video-wrap">
+      <iframe src="https://www.youtube.com/embed/LCwueWa3LsQ" title="How to cook cassava leaves (isombe)" allowfullscreen></iframe>
+    </div>
+
+    <h2>Where it comes from: Rwanda</h2>
+    <div class="video-wrap">
+      <iframe src="PASTE_GOOGLE_MAPS_EMBED_URL" title="Map of Rwanda" loading="lazy"></iframe>
+    </div>
+  </article>
+</main>
+
+<footer class="site-footer">
+  <p>&copy; 2026 Tastes of Africa</p>
+  <form id="newsletter" class="newsletter">
+    <label for="news-email">Newsletter:</label>
+    <input type="email" id="news-email" placeholder="you@email.com" required>
+    <button type="submit">Subscribe</button>
+  </form>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipes | Tastes of Africa</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="logo" href="index.html">Tastes of Africa</a>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="recipes.html">Recipes</a>
+    <a href="regions.html">Regions</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <button id="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+  </nav>
+</header>
+
+<main>
+  <section class="container">
+    <h1>Recipes</h1>
+
+    <div class="filters">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="west-africa">West Africa</button>
+      <button class="filter-btn" data-filter="east-africa">East Africa</button>
+      <button class="filter-btn" data-filter="north-africa">North Africa</button>
+    </div>
+
+    <div class="card-grid">
+      <article class="card recipe-card" data-region="west-africa" data-id="jollof">
+        <img src="images/jollof.jpg" alt="Jollof rice">
+        <h3>Jollof Rice</h3>
+        <p>Nigeria / Ghana</p>
+        <a href="jollof.html">View recipe</a>
+        <button class="fav-btn" aria-label="Favorite Jollof Rice">❤️ Favorite</button>
+      </article>
+
+      <article class="card recipe-card" data-region="east-africa" data-id="injera">
+        <img src="images/injera.jpg" alt="Injera">
+        <h3>Injera</h3>
+        <p>Ethiopia</p>
+        <a href="injera.html">View recipe</a>
+        <button class="fav-btn" aria-label="Favorite Injera">❤️ Favorite</button>
+      </article>
+
+      <article class="card recipe-card" data-region="east-africa" data-id="isombe">
+        <img src="images/isombe.jpg" alt="Isombe">
+        <h3>Isombe</h3>
+        <p>Rwanda</p>
+        <a href="isombe.html">View recipe</a>
+        <button class="fav-btn" aria-label="Favorite Isombe">❤️ Favorite</button>
+      </article>
+
+      <article class="card recipe-card" data-region="north-africa" data-id="tagine">
+        <img src="images/tagine.jpg" alt="Moroccan tagine">
+        <h3>Tagine</h3>
+        <p>Morocco</p>
+        <a href="regions.html#north">See North Africa</a>
+        <button class="fav-btn" aria-label="Favorite Tagine">❤️ Favorite</button>
+      </article>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <p>&copy; 2026 Tastes of Africa</p>
+  <form id="newsletter" class="newsletter">
+    <label for="news-email">Newsletter:</label>
+    <input type="email" id="news-email" placeholder="you@email.com" required>
+    <button type="submit">Subscribe</button>
+  </form>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

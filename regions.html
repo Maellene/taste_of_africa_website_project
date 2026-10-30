@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Culinary Regions | Tastes of Africa</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <a class="logo" href="index.html">Tastes of Africa</a>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="recipes.html">Recipes</a>
+    <a href="regions.html">Regions</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <button id="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+  </nav>
+</header>
+
+<main>
+  <section class="container">
+    <h1>Culinary Regions</h1>
+    <ul class="region-links">
+      <li><a href="#west">West Africa</a></li>
+      <li><a href="#north">North Africa</a></li>
+      <li><a href="#east">East Africa</a></li>
+    </ul>
+  </section>
+
+  <section class="container" id="west">
+    <h2>West Africa</h2>
+    <p>West African food culture is built on hearty stews and one-pot meals. Staples include
+       <mark>rice</mark>, <mark>yam</mark> and <mark>plantain</mark>. Common techniques are
+       <mark>slow simmering</mark> and open-fire grilling.</p>
+    <h3>Example dishes</h3>
+    <ul>
+      <li><a href="jollof.html">Jollof Rice</a></li>
+    </ul>
+    <div class="video-wrap">
+      <iframe src="https://www.youtube.com/embed/tuC4WWo60qU" title="Sweet jollof rice recipe, a West African classic" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <section class="container" id="north">
+    <h2>North Africa</h2>
+    <p>North African cooking mixes Arab, Berber and Mediterranean influences. Staples include
+       <mark>couscous</mark>, olives and dates. Flavors come from <mark>cumin</mark>,
+       <mark>harissa</mark> and preserved lemons, with <mark>slow cooking in clay pots</mark>.</p>
+    <h3>Example dishes</h3>
+    <ul>
+      <li>Tagine (Morocco)</li>
+      <li>Couscous (Algeria, Tunisia, Morocco)</li>
+    </ul>
+    <div class="video-wrap">
+      <iframe src="https://www.youtube.com/embed/1zyDUkdVZ0E" title="Exploring the richness of African cuisine and traditional foods" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <section class="container" id="east">
+    <h2>East Africa</h2>
+    <p>East African cuisine ranges from Ethiopian spiced stews to Rwandan vegetable dishes. Staples include
+       <mark>teff</mark>, <mark>cassava</mark> and beans. Signature flavors include
+       <mark>berbere spice</mark>, and cooking often involves <mark>steaming and stewing</mark>.</p>
+    <h3>Example dishes</h3>
+    <ul>
+      <li><a href="injera.html">Injera</a></li>
+      <li><a href="isombe.html">Isombe</a></li>
+    </ul>
+    <div class="video-wrap">
+      <iframe src="https://www.youtube.com/embed/1dc5gsGc9Qs" title="How to make injera from scratch, an East African staple" allowfullscreen></iframe>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <p>&copy; 2026 Tastes of Africa</p>
+  <form id="newsletter" class="newsletter">
+    <label for="news-email">Newsletter:</label>
+    <input type="email" id="news-email" placeholder="you@email.com" required>
+    <button type="submit">Subscribe</button>
+  </form>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
