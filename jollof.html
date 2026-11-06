@@ -4,12 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jollof Rice | Tastes of Africa</title>
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
+<!-- Site header and navigation -->
 <header class="site-header">
   <a class="logo" href="index.html">Tastes of Africa</a>
   <nav>
@@ -18,7 +20,7 @@
     <a href="regions.html">Regions</a>
     <a href="about.html">About</a>
     <a href="contact.html">Contact</a>
-    <button id="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+    <button id="theme-toggle" aria-label="Switch to dark mode">🌙 Dark mode</button>
   </nav>
 </header>
 
@@ -30,6 +32,7 @@
        playfully compete over who makes it best. Its flavor comes from
        <mark>tomatoes</mark>, <mark>scotch bonnet</mark> and <mark>thyme</mark>.</p>
 
+    <!-- Ingredients with a servings scaler (data-amount holds the base quantity) -->
     <h2>Ingredients</h2>
     <label for="servings">Servings:</label>
     <input type="number" id="servings" value="4" min="1" max="20" data-base="4">
@@ -41,6 +44,7 @@
       <li><span class="amt" data-amount="2">2</span> tbsp tomato paste</li>
     </ul>
 
+    <!-- Expandable cooking steps -->
     <h2>Instructions</h2>
     <details>
       <summary>Step 1: Make the sauce</summary>
@@ -55,6 +59,7 @@
       <p>Fluff with a fork and serve with fried plantain.</p>
     </details>
 
+    <!-- Nutrition table -->
     <h2>Nutrition Facts (approximate, per serving)</h2>
     <table>
       <thead><tr><th>Nutrient</th><th>Amount</th></tr></thead>
@@ -65,20 +70,23 @@
       </tbody>
     </table>
 
+    <!-- YouTube tutorial -->
     <h2>Video Tutorial: Sweet Jollof Rice Recipe</h2>
     <div class="video-wrap">
       <iframe src="https://www.youtube.com/embed/tuC4WWo60qU" title="Sweet jollof rice recipe" allowfullscreen></iframe>
     </div>
 
+    <!-- Map of country of origin -->
     <h2>Where it comes from: Nigeria</h2>
     <div class="video-wrap">
-      <iframe src="PASTE_GOOGLE_MAPS_EMBED_URL" title="Map of Nigeria" loading="lazy"></iframe>
+      <iframe src="https://www.google.com/maps?q=Nigeria&output=embed" title="Map of Nigeria" loading="lazy" allowfullscreen></iframe>
     </div>
   </article>
 </main>
 
+<!-- Footer with newsletter signup -->
 <footer class="site-footer">
-  <p>&copy; 2026 Tastes of Africa</p>
+  <p> 2026 Tastes of Africa</p>
   <form id="newsletter" class="newsletter">
     <label for="news-email">Newsletter:</label>
     <input type="email" id="news-email" placeholder="you@email.com" required>

@@ -4,12 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact | Tastes of Africa</title>
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
+<!-- Site header and navigation -->
 <header class="site-header">
   <a class="logo" href="index.html">Tastes of Africa</a>
   <nav>
@@ -18,7 +20,7 @@
     <a href="regions.html">Regions</a>
     <a href="about.html">About</a>
     <a href="contact.html">Contact</a>
-    <button id="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+    <button id="theme-toggle" aria-label="Switch to dark mode">🌙 Dark mode</button>
   </nav>
 </header>
 
@@ -26,6 +28,7 @@
   <section class="container">
     <h1>Contact Us</h1>
 
+    <!-- Contact form (validated with JavaScript) -->
     <form id="contact-form">
       <label for="name">Name</label>
       <input type="text" id="name" required>
@@ -38,18 +41,17 @@
         <option value="">Choose...</option>
         <option>Rwanda</option>
         <option>Nigeria</option>
-        <option>Ethiopia</option>
         <option>Morocco</option>
         <option>Other</option>
       </select>
 
+      <!-- Input with datalist suggestions -->
       <label for="dish">Favorite dish (suggestions)</label>
       <input type="text" id="dish" list="dishes">
       <datalist id="dishes">
         <option value="Jollof Rice">
-        <option value="Injera">
-        <option value="Isombe">
         <option value="Tagine">
+        <option value="Isombe">
       </datalist>
 
       <label for="message">Message</label>
@@ -59,12 +61,14 @@
       <button type="submit">Send</button>
     </form>
 
+    <!-- Shown after a successful submit -->
     <p id="confirmation" class="confirmation" hidden></p>
   </section>
 </main>
 
+<!-- Footer with newsletter signup -->
 <footer class="site-footer">
-  <p>&copy; 2026 Tastes of Africa</p>
+  <p> 2026 Tastes of Africa</p>
   <form id="newsletter" class="newsletter">
     <label for="news-email">Newsletter:</label>
     <input type="email" id="news-email" placeholder="you@email.com" required>

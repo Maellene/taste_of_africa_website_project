@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tagine | Tastes of Africa</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Site header and navigation -->
+<header class="site-header">
+  <a class="logo" href="index.html">Tastes of Africa</a>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="recipes.html">Recipes</a>
+    <a href="regions.html">Regions</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <button id="theme-toggle" aria-label="Switch to dark mode">🌙 Dark mode</button>
+  </nav>
+</header>
+
+<main>
+  <article class="container recipe">
+    <h1>Moroccan Tagine</h1>
+    <img class="recipe-img" src="images/tagine.jpg" alt="Moroccan chicken tagine in a clay pot">
+    <p>Tagine is Morocco's famous slow-cooked stew, named after the cone-shaped clay pot it is
+       cooked in. Tender chicken simmers with <mark>preserved lemon</mark>, olives and warm spices
+       such as <mark>cumin</mark>, ginger and turmeric, and is served with bread or couscous.</p>
+
+    <!-- Ingredients with a servings scaler (data-amount holds the base quantity) -->
+    <h2>Ingredients</h2>
+    <label for="servings">Servings:</label>
+    <input type="number" id="servings" value="4" min="1" max="20" data-base="4">
+    <ul id="ingredients">
+      <li><span class="amt" data-amount="4">4</span> chicken thighs</li>
+      <li><span class="amt" data-amount="1">1</span> onion, sliced</li>
+      <li><span class="amt" data-amount="2">2</span> cloves garlic</li>
+      <li><span class="amt" data-amount="1">1</span> tsp cumin</li>
+      <li><span class="amt" data-amount="1">1</span> tsp ground ginger</li>
+      <li><span class="amt" data-amount="1">1</span> tsp turmeric</li>
+      <li><span class="amt" data-amount="1">1</span> preserved lemon</li>
+      <li><span class="amt" data-amount="0.5">0.5</span> cup green olives</li>
+    </ul>
+
+    <!-- Expandable cooking steps -->
+    <h2>Instructions</h2>
+    <details>
+      <summary>Step 1: Season the chicken</summary>
+      <p>Rub the chicken with cumin, ginger, turmeric, garlic and a little salt. Rest for 30 minutes.</p>
+    </details>
+    <details>
+      <summary>Step 2: Simmer</summary>
+      <p>Layer the sliced onion in the pot, add the chicken and half a cup of water, cover, and cook on low heat for about 1 hour.</p>
+    </details>
+    <details>
+      <summary>Step 3: Finish and serve</summary>
+      <p>Add the preserved lemon and olives, cook uncovered for 15 minutes until the sauce thickens, and serve with bread or couscous.</p>
+    </details>
+
+    <!-- Nutrition table -->
+    <h2>Nutrition Facts (approximate, per serving)</h2>
+    <table>
+      <thead><tr><th>Nutrient</th><th>Amount</th></tr></thead>
+      <tbody>
+        <tr><td>Calories</td><td>380 kcal</td></tr>
+        <tr><td>Carbohydrates</td><td>12 g</td></tr>
+        <tr><td>Protein</td><td>30 g</td></tr>
+      </tbody>
+    </table>
+
+    <!-- YouTube tutorial (replace the video ID with your own pick if you like) -->
+    <h2>Video Tutorial: How to Make Moroccan Tagine</h2>
+    <div class="video-wrap">
+      <iframe src="https://www.youtube.com/embed/-1ig-eaCMEA" title="Moroccan chicken tagine tutorial" allowfullscreen></iframe>
+    </div>
+
+    <!-- Map of country of origin -->
+    <h2>Where it comes from: Morocco</h2>
+    <div class="video-wrap">
+      <iframe src="https://www.google.com/maps?q=Morocco&output=embed" title="Map of Morocco" loading="lazy" allowfullscreen></iframe>
+    </div>
+  </article>
+</main>
+
+<!-- Footer with newsletter signup -->
+<footer class="site-footer">
+  <p> 2026 Tastes of Africa</p>
+  <form id="newsletter" class="newsletter">
+    <label for="news-email">Newsletter:</label>
+    <input type="email" id="news-email" placeholder="you@email.com" required>
+    <button type="submit">Subscribe</button>
+  </form>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
