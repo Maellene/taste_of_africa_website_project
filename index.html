@@ -4,12 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home | Tastes of Africa</title>
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
+<!-- Site header and navigation -->
 <header class="site-header">
   <a class="logo" href="index.html">Tastes of Africa</a>
   <nav>
@@ -18,11 +20,12 @@
     <a href="regions.html">Regions</a>
     <a href="about.html">About</a>
     <a href="contact.html">Contact</a>
-    <button id="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+    <button id="theme-toggle" aria-label="Switch to dark mode">🌙 Dark mode</button>
   </nav>
 </header>
 
 <main>
+  <!-- Hero section with background image and intro video -->
   <section class="hero">
     <div class="hero-overlay">
       <h1>Welcome to Tastes of Africa</h1>
@@ -33,45 +36,45 @@
     </div>
   </section>
 
+  <!-- Featured dishes -->
   <section class="container">
     <h2>Featured Dishes</h2>
     <div class="card-grid">
       <figure class="card">
         <img src="images/jollof.jpg" alt="A pot of West African jollof rice">
         <figcaption>
-          <h3>Jollof Rice</h3>
-          <p>Smoky tomato rice with <mark>scotch bonnet pepper</mark>.</p>
-          <a href="jollof.html">View recipe</a>
+          <h3><a href="jollof.html">Jollof Rice</a></h3>
+          <p>Smoky tomato rice from Nigeria with <mark>scotch bonnet pepper</mark>.</p>
         </figcaption>
       </figure>
       <figure class="card">
-        <img src="images/injera.jpg" alt="Injera served with Ethiopian stews">
+        <img src="images/tagine.jpg" alt="Moroccan chicken tagine in a clay pot">
         <figcaption>
-          <h3>Injera</h3>
-          <p>Spongy sourdough flatbread made from <mark>teff</mark>.</p>
-          <a href="injera.html">View recipe</a>
+          <h3><a href="tagine.html">Tagine</a></h3>
+          <p>Slow-cooked Moroccan stew with <mark>preserved lemon</mark> and olives.</p>
         </figcaption>
       </figure>
       <figure class="card">
         <img src="images/isombe.jpg" alt="Isombe, a cassava leaves stew from Rwanda">
         <figcaption>
-          <h3>Isombe</h3>
+          <h3><a href="isombe.html">Isombe</a></h3>
           <p>Rwandan cassava leaves stewed with <mark>peanut</mark> flavor.</p>
-          <a href="isombe.html">View recipe</a>
         </figcaption>
       </figure>
     </div>
   </section>
 
+  <!-- Links to region pages -->
   <section class="container">
     <h2>Explore by Region</h2>
     <ul class="region-links">
-      <li><a href="regions.html#west">West Africa</a></li>
-      <li><a href="regions.html#north">North Africa</a></li>
-      <li><a href="regions.html#east">East Africa</a></li>
+      <li><a href="west-africa.html">West Africa</a></li>
+      <li><a href="north-africa.html">North Africa</a></li>
+      <li><a href="east-africa.html">East Africa</a></li>
     </ul>
   </section>
 
+  <!-- Latest food trends -->
   <section class="container">
     <h2>Latest Food Trends</h2>
     <article class="trend">
@@ -89,8 +92,9 @@
   </section>
 </main>
 
+<!-- Footer with newsletter signup -->
 <footer class="site-footer">
-  <p>&copy; 2026 Tastes of Africa</p>
+  <p> 2026 Tastes of Africa</p>
   <form id="newsletter" class="newsletter">
     <label for="news-email">Newsletter:</label>
     <input type="email" id="news-email" placeholder="you@email.com" required>
